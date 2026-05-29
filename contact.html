@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Sylvara Web Design — get a free quote or book a discovery call.">
+  <title>Contact — Sylvara Web Design</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <div id="nav-root"></div>
+
+  <main>
+    <!-- ── HERO ── -->
+    <section class="page-hero">
+      <div class="glow-blob glow-blob-tl" aria-hidden="true"></div>
+      <div class="container">
+        <span class="badge" data-i18n="contact.hero.badge">GET IN TOUCH</span>
+        <h1 data-i18n="contact.hero.h1">Let's Build Something Great</h1>
+        <p data-i18n="contact.hero.sub">Tell us about your project and we'll get back to you within 24 hours.</p>
+      </div>
+    </section>
+
+    <!-- ── CONTACT LAYOUT ── -->
+    <section class="section" style="padding-top:0">
+      <div class="container">
+        <div class="contact-layout">
+          <!-- Form column -->
+          <div>
+            <form id="contact-form" novalidate>
+              <div id="form-success" class="form-success" role="alert">
+                <h3 data-i18n="contact.form.success.h3">Message sent!</h3>
+                <p data-i18n="contact.form.success.p">Thanks for reaching out. We'll be in touch within 24 hours.</p>
+              </div>
+
+              <div class="form-group">
+                <label for="name" data-i18n="contact.form.label.name">Your Name</label>
+                <input type="text" id="name" name="name" autocomplete="name"
+                       data-i18n-placeholder="contact.form.placeholder.name"
+                       placeholder="Jane Smith"
+                       data-error-fallback="Please enter your name."
+                       aria-required="true">
+                <span class="field-error" role="alert"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="email" data-i18n="contact.form.label.email">Email Address</label>
+                <input type="email" id="email" name="email" autocomplete="email"
+                       data-i18n-placeholder="contact.form.placeholder.email"
+                       placeholder="jane@company.com"
+                       data-error-fallback="Please enter a valid email."
+                       aria-required="true">
+                <span class="field-error" role="alert"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="service" data-i18n="contact.form.label.service">Service Interested In</label>
+                <select id="service" name="service" aria-required="true"
+                        data-error-fallback="Please select a service.">
+                  <option value="" data-i18n="contact.form.service.default">Select a service…</option>
+                  <option value="web-design" data-i18n="service.webdesign.title">Web Design</option>
+                  <option value="branding" data-i18n="service.branding.title">Branding</option>
+                  <option value="logo" data-i18n="service.logo.title">Logo Design</option>
+                  <option value="seo" data-i18n="service.seo.title">SEO</option>
+                  <option value="ecommerce" data-i18n="service.ecommerce.title">E-Commerce</option>
+                  <option value="social" data-i18n="service.social.title">Social Media Design</option>
+                  <option value="copy" data-i18n="service.copy.title">Copywriting</option>
+                  <option value="maintenance" data-i18n="service.maintenance.title">Website Maintenance</option>
+                </select>
+                <span class="field-error" role="alert"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="message" data-i18n="contact.form.label.message">Message</label>
+                <textarea id="message" name="message" rows="5"
+                          data-i18n-placeholder="contact.form.placeholder.message"
+                          placeholder="Tell us about your project…"
+                          data-error-fallback="Please write a short message."
+                          aria-required="true"></textarea>
+                <span class="field-error" role="alert"></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center" data-i18n="contact.form.submit">Send Message</button>
+            </form>
+          </div>
+
+          <!-- Sidebar column -->
+          <div>
+            <div class="card contact-card" data-reveal>
+              <div class="card-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              </div>
+              <h3 data-i18n="contact.book.h3">Book a Discovery Call</h3>
+              <p data-i18n="contact.book.p">Prefer to talk? Book a free 30-minute call and we'll walk through your project together.</p>
+              <a href="https://calendly.com" target="_blank" rel="noopener" class="btn btn-ghost" style="width:100%;justify-content:center" data-i18n="contact.book.btn">Book on Calendly</a>
+            </div>
+
+            <div class="card" style="margin-top:20px" data-reveal>
+              <div class="contact-info-item">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                <span data-i18n="contact.info.email">hello@sylvaradesign.com</span>
+              </div>
+              <div class="contact-info-item">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span data-i18n="contact.info.location">Tallinn, Estonia</span>
+              </div>
+              <div class="contact-info-item">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <span data-i18n="contact.info.response">We reply within 24 hours</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-root"></div>
+  <script src="/js/i18n.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>
