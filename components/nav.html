@@ -1,0 +1,34 @@
+<nav class="navbar" role="navigation" aria-label="Main navigation">
+  <a href="/index.html" class="navbar-logo" aria-label="Sylvara Web Design home">
+    <span class="logo-main">SYLVARA</span>
+    <span class="logo-sub">WEB DESIGN</span>
+  </a>
+
+  <div class="navbar-links">
+    <a href="/services.html" data-i18n="nav.services" data-navlink="services">Services</a>
+    <a href="/portfolio.html" data-i18n="nav.work" data-navlink="work">Work</a>
+    <a href="/about.html" data-i18n="nav.about" data-navlink="about">About</a>
+    <a href="/contact.html" data-i18n="nav.contact" data-navlink="contact">Contact</a>
+    <div class="lang-switcher" role="group" aria-label="Language selection">
+      <button class="lang-btn" data-lang="et" onclick="loadLanguage('et')" aria-label="Switch to Estonian">ET</button>
+      <span class="lang-sep" aria-hidden="true">|</span>
+      <button class="lang-btn active" data-lang="en" onclick="loadLanguage('en')" aria-label="Switch to English">EN</button>
+    </div>
+  </div>
+
+  <button class="hamburger" id="hamburger-btn" aria-label="Open menu" aria-expanded="false" aria-controls="nav-overlay">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="nav-overlay" id="nav-overlay" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+  <button class="nav-overlay-close" id="nav-overlay-close" aria-label="Close menu">&#x2715;</button>
+  <a href="/services.html" data-i18n="nav.services">Services</a>
+  <a href="/portfolio.html" data-i18n="nav.work">Work</a>
+  <a href="/about.html" data-i18n="nav.about">About</a>
+  <a href="/contact.html" data-i18n="nav.contact">Contact</a>
+  <div class="nav-overlay-lang" role="group" aria-label="Language selection">
+    <button data-lang="et" onclick="loadLanguage('et')" aria-label="Switch to Estonian">ET</button>
+    <button data-lang="en" onclick="loadLanguage('en')" aria-label="Switch to English">EN</button>
+  </div>
+</div>
