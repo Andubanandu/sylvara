@@ -1,0 +1,159 @@
+{
+  "nav.services": "Teenused",
+  "nav.work": "Tööd",
+  "nav.about": "Meist",
+  "nav.contact": "Kontakt",
+
+  "home.hero.badge": "TÄISTEENUSTE DISAINIAGENTUR",
+  "home.hero.h1.line1": "Julge disain.",
+  "home.hero.h1.line2": "Reaalsed tulemused.",
+  "home.hero.sub": "Loome professionaalseid veebilehti ja brändingut ettevõtetele, kes soovivad silma paista. Veebidisain, bränding, SEO ja palju muud — kõik ühes kohas.",
+  "home.hero.cta.primary": "Küsi hinnapakkumist",
+  "home.hero.cta.ghost": "Vaata meie töid →",
+
+  "home.services.label": "MIDA ME TEEME",
+  "home.services.h2": "Kõik, mida su bränd vajab, ühes kohas.",
+  "home.services.more": "+ 4 teenust veel →",
+
+  "home.cta.h2": "Valmis alustama?",
+  "home.cta.sub": "Tasuta konsultatsioon, kohustuseta.",
+  "home.cta.btn": "Broneeri kõne",
+
+  "services.hero.badge": "MIDA ME PAKUME",
+  "services.hero.h1": "Teenused, mis toetavad kasvu",
+  "services.hero.sub": "Esimesest veebilehest kuni täieliku brändiuuenduseni — meil on oskused, mis viivad su ettevõtte edasi.",
+
+  "service.webdesign.title": "Veebidisain",
+  "service.webdesign.desc": "Ilusad, responsiivned veebilehed, mis laadivad kiiresti ja muudavad külastajad klientideks. Töötab suurepäraselt igal seadmel.",
+  "service.webdesign.price": "Alates 799 €",
+
+  "service.branding.title": "Bränding",
+  "service.branding.desc": "Täielikud brändiidentiteedi süsteemid — strateegia, visuaalne identiteet, brändijuhend ja materjalid, mis eristavad sind konkurentidest.",
+  "service.branding.price": "Alates 599 €",
+
+  "service.logo.title": "Logodisain",
+  "service.logo.desc": "Eristuv ja mitmekülgne logo, mis esindab su ettevõtet ideaalselt — trükis, veebis ja sotsiaalmeedias.",
+  "service.logo.price": "Alates 299 €",
+
+  "service.seo.title": "SEO",
+  "service.seo.desc": "Lehe optimeerimine, tehniline SEO ja sisustrategia, et saada Google'is esimestele positsioonidele ja meelitada orgaanilist liiklust.",
+  "service.seo.price": "Alates 399 €/kuus",
+
+  "service.ecommerce.title": "E-pood",
+  "service.ecommerce.desc": "Müügile orienteeritud veebipoed. Sujuv ostukogemus, tootehaldus ja makseintegratsioon.",
+  "service.ecommerce.price": "Alates 999 €",
+
+  "service.social.title": "Sotsiaalmeedia disain",
+  "service.social.desc": "Brändikohased graafikad, mallid ja visuaalne sisu Instagrami, Facebooki, LinkedIni ja teiste kanalite jaoks.",
+  "service.social.price": "Alates 299 €",
+
+  "service.copy.title": "Sisukirjutamine",
+  "service.copy.desc": "Veenev veebilehetekst, blogipostitused ja turundusmaterjalid, mis kõnetavad su sihtrühma ja kutsuvad tegutsema.",
+  "service.copy.price": "Alates 199 €",
+
+  "service.maintenance.title": "Veebilehe hooldus",
+  "service.maintenance.desc": "Kuised hooldusteenused: uuendused, varukoopiad, turvamonitor ja jõudluskontroll — et sa ei peaks muretsema.",
+  "service.maintenance.price": "Alates 99 €/kuus",
+
+  "process.h2": "Kuidas me töötame",
+  "process.sub": "Selge ja koostöine protsess esimesest kõnest avaldamispäevani.",
+  "process.step1.title": "Avastame",
+  "process.step1.desc": "Õpime tundma su ettevõtet, eesmärke ja sihtrühma.",
+  "process.step2.title": "Disainime",
+  "process.step2.desc": "Loome visuaalse suuna ja saame su kinnituse.",
+  "process.step3.title": "Ehitame",
+  "process.step3.desc": "Arendame täislahenduse kõrgeima standardi järgi.",
+  "process.step4.title": "Avaldame",
+  "process.step4.desc": "Läheme avalikuks ja toetame sind üleandmise käigus.",
+
+  "portfolio.hero.badge": "MEIE TÖÖD",
+  "portfolio.hero.h1": "Tööd, mille üle oleme uhked",
+  "portfolio.hero.sub": "Valik projekte veebidisaini, brändingu ja digitaalsete lahenduste vallast.",
+  "portfolio.filter.all": "Kõik",
+  "portfolio.filter.web": "Veebidisain",
+  "portfolio.filter.branding": "Bränding",
+  "portfolio.filter.ecommerce": "E-pood",
+
+  "portfolio.p1.title": "Mäkke Café",
+  "portfolio.p1.desc": "Brändiidentiteet ja veebileht Tallinna erikohvikule.",
+  "portfolio.p2.title": "NordFlow SaaS",
+  "portfolio.p2.desc": "Sihtleht ja kasutajarakendus B2B tootlikkusplatvormile.",
+  "portfolio.p3.title": "Kivi & Co.",
+  "portfolio.p3.desc": "Täielik rebranding ja brändijuhend ehituskonsultatsioonifirmale.",
+  "portfolio.p4.title": "Lumi Boutique",
+  "portfolio.p4.desc": "E-pood Skandinaavia moekaubamärgile.",
+  "portfolio.p5.title": "Harmo Dental",
+  "portfolio.p5.desc": "Veebileht ja SEO seadistus kaasaegsele hambakliinikule.",
+  "portfolio.p6.title": "Päike Studio",
+  "portfolio.p6.desc": "Logo ja sotsiaalmeedia pakett fotostuudiole.",
+
+  "portfolio.stat1.num": "50+",
+  "portfolio.stat1.label": "Projekti tehtud",
+  "portfolio.stat2.num": "3",
+  "portfolio.stat2.label": "Aastat kogemust",
+  "portfolio.stat3.num": "100%",
+  "portfolio.stat3.label": "Kliendirahulolu",
+
+  "portfolio.cta.btn": "Alusta oma projekti",
+
+  "about.hero.badge": "KES ME OLEME",
+  "about.hero.h1": "Meie oleme Sylvara",
+  "about.hero.sub": "Väike meeskond disainereid ja arendajaid, kes usuvad, et suurepärane digitaalne töö muudab ettevõtete kasvuvõimalusi. Teeme tihedat koostööd klientidega — ilma vahendajateta, otse nendega, kes su projekti loovad.",
+
+  "about.team.h2": "Tutvu meeskonnaga",
+  "about.team.m1.name": "Marten Kask",
+  "about.team.m1.role": "Peadisainer ja asutaja",
+  "about.team.m1.bio": "10-aastane UI/UX kogemus agentuurides ja iduettevõtetes.",
+  "about.team.m2.name": "Laura Tamm",
+  "about.team.m2.role": "Veebiarendaja",
+  "about.team.m2.bio": "Full-stack arendaja, kellele meeldib puhas ja kiire front-end.",
+  "about.team.m3.name": "Karl Sepp",
+  "about.team.m3.role": "Brändistrateg",
+  "about.team.m3.bio": "Aitab klientidel leida oma hääl ja eristuda tihedas turul.",
+
+  "about.values.h2": "Meie väärtused",
+  "about.values.v1.title": "Kvaliteet",
+  "about.values.v1.desc": "Me ei lõika nurkadest. Iga projekt saab meie täieliku tähelepanu ja standardi, mille taga me seisame.",
+  "about.values.v2.title": "Läbipaistvus",
+  "about.values.v2.desc": "Selged tähtajad, aus hinnakujundus ja avatud suhtlus algusest lõpuni.",
+  "about.values.v3.title": "Tulemused",
+  "about.values.v3.desc": "Ilus disain on vaid pool tööst. Loome asju, mis toimivad ja aitavad su ettevõttel kasvada.",
+
+  "about.cta.btn": "Tee meiega koostööd",
+
+  "contact.hero.badge": "VÕTA ÜHENDUST",
+  "contact.hero.h1": "Ehitame midagi suurepärast",
+  "contact.hero.sub": "Räägi meile oma projektist ja me vastame 24 tunni jooksul.",
+
+  "contact.form.label.name": "Sinu nimi",
+  "contact.form.placeholder.name": "Mari Mägi",
+  "contact.form.label.email": "E-posti aadress",
+  "contact.form.placeholder.email": "mari@ettevote.ee",
+  "contact.form.label.service": "Huvipakkuv teenus",
+  "contact.form.service.default": "Vali teenus…",
+  "contact.form.label.message": "Sõnum",
+  "contact.form.placeholder.message": "Räägi meile oma projektist, ajakavast ja muudest olulistest detailidest.",
+  "contact.form.submit": "Saada sõnum",
+
+  "contact.form.error.name": "Palun sisesta oma nimi.",
+  "contact.form.error.email": "Palun sisesta kehtiv e-posti aadress.",
+  "contact.form.error.service": "Palun vali teenus.",
+  "contact.form.error.message": "Palun kirjuta lühike sõnum.",
+
+  "contact.form.success.h3": "Sõnum saadetud!",
+  "contact.form.success.p": "Täname, et võtsid ühendust. Vastame 24 tunni jooksul.",
+
+  "contact.book.h3": "Broneeri avastuskõne",
+  "contact.book.p": "Eelistad rääkida? Broneeri tasuta 30-minutiline kõne ja arutame su projekti üheskoos läbi.",
+  "contact.book.btn": "Broneeri Calendlys",
+
+  "contact.info.email": "hello@sylvaradesign.com",
+  "contact.info.location": "Tallinn, Eesti",
+  "contact.info.response": "Vastame 24 tunni jooksul",
+
+  "footer.tagline": "Julge disain. Reaalsed tulemused.",
+  "footer.nav.title": "Navigatsioon",
+  "footer.follow.title": "Jälgi meid",
+  "footer.copy": "© 2025 Sylvara Web Design. Kõik õigused kaitstud.",
+  "footer.privacy": "Privaatsuspoliitika"
+}

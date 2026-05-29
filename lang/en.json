@@ -1,0 +1,159 @@
+{
+  "nav.services": "Services",
+  "nav.work": "Work",
+  "nav.about": "About",
+  "nav.contact": "Contact",
+
+  "home.hero.badge": "FULL-SERVICE DESIGN AGENCY",
+  "home.hero.h1.line1": "Bold Design.",
+  "home.hero.h1.line2": "Real Results.",
+  "home.hero.sub": "We build high-converting websites and brand identities for businesses that want to stand out. Web design, branding, SEO, and more — all under one roof.",
+  "home.hero.cta.primary": "Get a Free Quote",
+  "home.hero.cta.ghost": "View Our Work →",
+
+  "home.services.label": "WHAT WE DO",
+  "home.services.h2": "Everything your brand needs, in one place.",
+  "home.services.more": "+ 4 more services →",
+
+  "home.cta.h2": "Ready to get started?",
+  "home.cta.sub": "Free consultation, no commitment.",
+  "home.cta.btn": "Book a Call",
+
+  "services.hero.badge": "WHAT WE OFFER",
+  "services.hero.h1": "Services Built for Growth",
+  "services.hero.sub": "From your first website to a full brand overhaul — we have the skills to move your business forward.",
+
+  "service.webdesign.title": "Web Design",
+  "service.webdesign.desc": "Beautiful, responsive websites that load fast and convert visitors into customers. Built to work flawlessly on every device.",
+  "service.webdesign.price": "Starting from €799",
+
+  "service.branding.title": "Branding",
+  "service.branding.desc": "Complete brand identity systems — strategy, visual identity, brand guidelines, and assets that set you apart from the competition.",
+  "service.branding.price": "Starting from €599",
+
+  "service.logo.title": "Logo Design",
+  "service.logo.desc": "A distinctive, versatile logo that represents your business perfectly across print, web, and social media.",
+  "service.logo.price": "Starting from €299",
+
+  "service.seo.title": "SEO",
+  "service.seo.desc": "On-page optimisation, technical SEO, and content strategy to get your website ranking on Google and driving organic traffic.",
+  "service.seo.price": "Starting from €399/mo",
+
+  "service.ecommerce.title": "E-Commerce",
+  "service.ecommerce.desc": "Online shops designed to sell. Seamless checkout experience, product management, and payment integration.",
+  "service.ecommerce.price": "Starting from €999",
+
+  "service.social.title": "Social Media Design",
+  "service.social.desc": "On-brand graphics, templates, and visual content for Instagram, Facebook, LinkedIn, and beyond.",
+  "service.social.price": "Starting from €299",
+
+  "service.copy.title": "Copywriting",
+  "service.copy.desc": "Compelling website copy, blog posts, and marketing content that speaks to your audience and drives action.",
+  "service.copy.price": "Starting from €199",
+
+  "service.maintenance.title": "Website Maintenance",
+  "service.maintenance.desc": "Monthly care plans covering updates, backups, security monitoring, and performance checks — so you never have to worry.",
+  "service.maintenance.price": "Starting from €99/mo",
+
+  "process.h2": "How We Work",
+  "process.sub": "A clear, collaborative process from first call to launch day.",
+  "process.step1.title": "Discover",
+  "process.step1.desc": "We learn about your business, goals, and audience.",
+  "process.step2.title": "Design",
+  "process.step2.desc": "We craft the visual direction and get your approval.",
+  "process.step3.title": "Build",
+  "process.step3.desc": "We develop the full solution to the highest standard.",
+  "process.step4.title": "Launch",
+  "process.step4.desc": "We go live and support you through the handover.",
+
+  "portfolio.hero.badge": "OUR WORK",
+  "portfolio.hero.h1": "Work We're Proud Of",
+  "portfolio.hero.sub": "A selection of projects across web design, branding, and digital.",
+  "portfolio.filter.all": "All",
+  "portfolio.filter.web": "Web Design",
+  "portfolio.filter.branding": "Branding",
+  "portfolio.filter.ecommerce": "E-Commerce",
+
+  "portfolio.p1.title": "Mäkke Café",
+  "portfolio.p1.desc": "Brand identity and website for a specialty coffee shop in Tallinn.",
+  "portfolio.p2.title": "NordFlow SaaS",
+  "portfolio.p2.desc": "Landing page and onboarding flow for a B2B productivity platform.",
+  "portfolio.p3.title": "Kivi & Co.",
+  "portfolio.p3.desc": "Full rebrand and brand guidelines for a construction consultancy.",
+  "portfolio.p4.title": "Lumi Boutique",
+  "portfolio.p4.desc": "E-commerce store for a Scandinavian fashion label.",
+  "portfolio.p5.title": "Harmo Dental",
+  "portfolio.p5.desc": "Website and SEO setup for a modern dental clinic.",
+  "portfolio.p6.title": "Päike Studio",
+  "portfolio.p6.desc": "Logo and social media kit for a photography studio.",
+
+  "portfolio.stat1.num": "50+",
+  "portfolio.stat1.label": "Projects Delivered",
+  "portfolio.stat2.num": "3",
+  "portfolio.stat2.label": "Years of Experience",
+  "portfolio.stat3.num": "100%",
+  "portfolio.stat3.label": "Client Satisfaction",
+
+  "portfolio.cta.btn": "Start Your Project",
+
+  "about.hero.badge": "WHO WE ARE",
+  "about.hero.h1": "We Are Sylvara",
+  "about.hero.sub": "A small team of designers and developers who believe great digital work changes how businesses grow. We work closely with our clients — no account managers, just direct collaboration with the people building your project.",
+
+  "about.team.h2": "Meet the Team",
+  "about.team.m1.name": "Marten Kask",
+  "about.team.m1.role": "Lead Designer & Founder",
+  "about.team.m1.bio": "10 years of UI/UX experience across agencies and startups.",
+  "about.team.m2.name": "Laura Tamm",
+  "about.team.m2.role": "Web Developer",
+  "about.team.m2.bio": "Full-stack developer with a love for clean, performant front-ends.",
+  "about.team.m3.name": "Karl Sepp",
+  "about.team.m3.role": "Brand Strategist",
+  "about.team.m3.bio": "Helps clients find their voice and stand out in crowded markets.",
+
+  "about.values.h2": "What We Stand For",
+  "about.values.v1.title": "Quality",
+  "about.values.v1.desc": "We don't cut corners. Every project gets our full attention and a standard we're proud to put our name on.",
+  "about.values.v2.title": "Transparency",
+  "about.values.v2.desc": "Clear timelines, honest pricing, and open communication from kickoff to handover.",
+  "about.values.v3.title": "Results",
+  "about.values.v3.desc": "Beautiful design is only half the job. We build things that perform and help your business grow.",
+
+  "about.cta.btn": "Work With Us",
+
+  "contact.hero.badge": "GET IN TOUCH",
+  "contact.hero.h1": "Let's Build Something Great",
+  "contact.hero.sub": "Tell us about your project and we'll get back to you within 24 hours.",
+
+  "contact.form.label.name": "Your Name",
+  "contact.form.placeholder.name": "Jane Smith",
+  "contact.form.label.email": "Email Address",
+  "contact.form.placeholder.email": "jane@company.com",
+  "contact.form.label.service": "Service Interested In",
+  "contact.form.service.default": "Select a service…",
+  "contact.form.label.message": "Message",
+  "contact.form.placeholder.message": "Tell us about your project, timeline, and any details that would help us understand what you need.",
+  "contact.form.submit": "Send Message",
+
+  "contact.form.error.name": "Please enter your name.",
+  "contact.form.error.email": "Please enter a valid email address.",
+  "contact.form.error.service": "Please select a service.",
+  "contact.form.error.message": "Please write a short message.",
+
+  "contact.form.success.h3": "Message sent!",
+  "contact.form.success.p": "Thanks for reaching out. We'll be in touch within 24 hours.",
+
+  "contact.book.h3": "Book a Discovery Call",
+  "contact.book.p": "Prefer to talk? Book a free 30-minute call and we'll walk through your project together.",
+  "contact.book.btn": "Book on Calendly",
+
+  "contact.info.email": "hello@sylvaradesign.com",
+  "contact.info.location": "Tallinn, Estonia",
+  "contact.info.response": "We reply within 24 hours",
+
+  "footer.tagline": "Bold Design. Real Results.",
+  "footer.nav.title": "Navigation",
+  "footer.follow.title": "Follow Us",
+  "footer.copy": "© 2025 Sylvara Web Design. All rights reserved.",
+  "footer.privacy": "Privacy Policy"
+}
