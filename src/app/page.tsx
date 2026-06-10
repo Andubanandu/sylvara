@@ -40,6 +40,33 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ── PROBLEMS ── */}
+      <section className="section">
+        <div className="container">
+          <p className="section-label">{t.problems.label}</p>
+          <h2>{t.problems.h2}</h2>
+          <div className="problems-grid">
+            {t.problems.cards.map((card) => (
+              <div className="card" key={card.n}>
+                <span className="problem-num">{card.n}</span>
+                <h3>{card.title}</h3>
+                <p style={{ color: "var(--text-muted)", fontSize: ".875rem", marginTop: "8px", lineHeight: 1.65 }}>{card.body}</p>
+                {card.bullets.length > 0 && (
+                  <ul className="problem-bullets">
+                    {card.bullets.map((b) => (
+                      <li key={b}>{b}</li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+            ))}
+          </div>
+          <div style={{ textAlign: "center", marginTop: "48px" }}>
+            <NeonButton href="/contact" variant="solid" size="lg" className="text-base font-semibold">{t.problems.cta}</NeonButton>
+          </div>
+        </div>
+      </section>
+
       {/* ── CTA STRIP ── */}
       <section className="section" style={{ paddingTop: 0 }}>
         <div className="container">

@@ -122,6 +122,37 @@ export const en = {
       response: "We reply within 24 hours",
     },
   },
+  problems: {
+    label: "WHY SYLVARA",
+    h2: "Problems We Solve",
+    cards: [
+      {
+        n: "_01",
+        title: "Cheap web solutions become limiting",
+        body: "Started with Wix or similar? As your business grows, these platforms become restrictive. We build budget-friendly websites that are easy to scale.",
+        bullets: [] as string[],
+      },
+      {
+        n: "_02",
+        title: "Bad experiences with small developers",
+        body: "You hired a one or two-person team and ran into problems:",
+        bullets: [
+          "No UX designer on the team",
+          "Developer disappeared after handover",
+          "Insecure code, no backups or updates",
+          "Poor SEO and mobile experience",
+          "No documentation",
+        ],
+      },
+      {
+        n: "_03",
+        title: "Our difference",
+        body: "We are a two-person team covering everything: design, development, testing, and project management. The result: a secure, well-thought-out website that delivers real results.",
+        bullets: [] as string[],
+      },
+    ],
+    cta: "Get in Touch",
+  },
   footer: {
     tagline: "Bold Design. Real Results.",
     nav: "Navigation",
@@ -256,6 +287,37 @@ export const et: Translations = {
       location: "Tallinn, Eesti",
       response: "Vastame 24 tunni jooksul",
     },
+  },
+  problems: {
+    label: "MIKS SYLVARA",
+    h2: "Probleemid, mida lahendame",
+    cards: [
+      {
+        n: "_01",
+        title: "Odavad veebilahendused jäävad kitsaks",
+        body: "Alustasid Wixi või sarnasega? Ettevõtte kasvades jäävad need platvormid piiratuks. Loome eelarvesõbraliku veebilahenduse, mida on lihtne edasi arendada.",
+        bullets: [],
+      },
+      {
+        n: "_02",
+        title: "Halvad kogemused väikeste arendajatega",
+        body: "Palkasite ühe-kaheliikmelist tiimi ja tekkisid probleemid:",
+        bullets: [
+          "Puudus UX disainer",
+          "Arendaja kadus pärast üleandmist",
+          "Ebaturvaline kood, pole varundust ega uuendusi",
+          "Kehv SEO ja mobiilivaade",
+          "Pole dokumentatsiooni",
+        ],
+      },
+      {
+        n: "_03",
+        title: "Meie erinevus",
+        body: "Oleme kaheinimeline tiim, kes katab kõik: disain, arendus, testimine ja projektijuhtimine. Tulemus: turvaline, läbimõeldud veebilahendus, mis toob päriselt tulemusi.",
+        bullets: [],
+      },
+    ],
+    cta: "Võta ühendust",
   },
   footer: {
     tagline: "Julge Disain. Reaalsed Tulemused.",
