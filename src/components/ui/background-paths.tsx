@@ -1,8 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
+import { useRouter } from "next/navigation";
+import { Button } from "@/components/ui/neon-button";
 
 function FloatingPaths({ position }: { position: number }) {
     const paths = Array.from({ length: 36 }, (_, i) => ({
@@ -56,6 +56,7 @@ export function BackgroundPaths({
     title?: string;
 }) {
     const words = title.split(" ");
+    const router = useRouter();
 
     return (
         <div className="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-[#060E3A]">
@@ -100,22 +101,11 @@ export function BackgroundPaths({
                     </h1>
 
                     <Button
-                        asChild
-                        variant="ghost"
-                        className="rounded-[1.15rem] px-8 py-6 text-lg font-semibold
-                        bg-[#2563EB] hover:bg-[#1d4ed8] text-white
-                        shadow-[0_0_28px_rgba(37,99,235,0.45)] hover:shadow-[0_0_40px_rgba(37,99,235,0.65)]
-                        border border-[#2563EB]/60 transition-all duration-300
-                        hover:-translate-y-0.5"
+                        size="lg"
+                        className="text-base font-semibold text-white transition-all duration-300 hover:-translate-y-0.5"
+                        onClick={() => router.push("/contact")}
                     >
-                        <Link href="/contact">
-                            <span className="opacity-90 group-hover:opacity-100 transition-opacity">
-                                Get a Free Quote
-                            </span>
-                            <span className="ml-3 transition-transform duration-300 group-hover:translate-x-1.5">
-                                →
-                            </span>
-                        </Link>
+                        Get a Free Quote →
                     </Button>
                 </motion.div>
             </div>
