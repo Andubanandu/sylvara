@@ -1,5 +1,6 @@
+"use client";
 import Link from "next/link";
-import { home, services } from "@/lib/content";
+import { useLanguage } from "@/context/language-context";
 import { BackgroundPaths } from "@/components/ui/background-paths";
 import { Button as NeonButton } from "@/components/ui/neon-button";
 
@@ -11,18 +12,19 @@ const serviceIcons = [
 ];
 
 export default function HomePage() {
-  const previewServices = services.list.slice(0, 4);
+  const { t } = useLanguage();
+  const previewServices = t.services.list.slice(0, 4);
 
   return (
     <main>
       {/* ── HERO ── */}
-      <BackgroundPaths title={`${home.hero.line1} ${home.hero.line2}`} />
+      <BackgroundPaths title={`${t.home.hero.line1} ${t.home.hero.line2}`} ctaLabel={t.home.hero.ctaPrimary} />
 
       {/* ── SERVICES OVERVIEW ── */}
       <section className="section" style={{ paddingTop: 0 }}>
         <div className="container">
-          <p className="section-label">{home.services.label}</p>
-          <h2>{home.services.h2}</h2>
+          <p className="section-label">{t.home.services.label}</p>
+          <h2>{t.home.services.h2}</h2>
           <div className="services-grid">
             {previewServices.map((svc, i) => (
               <div className="card" key={svc.title}>
@@ -33,7 +35,7 @@ export default function HomePage() {
             ))}
           </div>
           <div className="services-more">
-            <Link href="/services">{home.services.more}</Link>
+            <Link href="/services">{t.home.services.more}</Link>
           </div>
         </div>
       </section>
@@ -43,10 +45,10 @@ export default function HomePage() {
         <div className="container">
           <div className="cta-strip">
             <div className="cta-strip-text">
-              <h2>{home.cta.h2}</h2>
-              <p>{home.cta.sub}</p>
+              <h2>{t.home.cta.h2}</h2>
+              <p>{t.home.cta.sub}</p>
             </div>
-            <NeonButton href="/contact" variant="solid" size="lg" className="mx-0 text-base font-semibold">{home.cta.btn}</NeonButton>
+            <NeonButton href="/contact" variant="solid" size="lg" className="mx-0 text-base font-semibold">{t.home.cta.btn}</NeonButton>
           </div>
         </div>
       </section>

@@ -1,7 +1,6 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
-import Link from "next/link";
-import { portfolio } from "@/lib/content";
+import { useLanguage } from "@/context/language-context";
 import { Button as NeonButton } from "@/components/ui/neon-button";
 
 function useCountUp(target: number, duration = 1200, active: boolean) {
@@ -47,18 +46,15 @@ function StatItem({ value, label }: { value: string; label: string }) {
   );
 }
 
+// Category key order matches the filters array order in both languages
+const categoryKeys = ["all", "web", "branding", "ecommerce"];
+
 export default function PortfolioPage() {
-  const [activeFilter, setActiveFilter] = useState("All");
+  const { t } = useLanguage();
+  const [filterIdx, setFilterIdx] = useState(0);
 
-  const filterMap: Record<string, string> = {
-    "All": "all",
-    "Web Design": "web",
-    "Branding": "branding",
-    "E-Commerce": "ecommerce",
-  };
-
-  const filtered = portfolio.projects.filter(
-    (p) => activeFilter === "All" || p.category === filterMap[activeFilter]
+  const filtered = t.portfolio.projects.filter(
+    (p) => filterIdx === 0 || p.category === categoryKeys[filterIdx]
   );
 
   return (
@@ -67,9 +63,9 @@ export default function PortfolioPage() {
       <section className="page-hero">
         <div className="glow-blob glow-blob-tl" aria-hidden="true"></div>
         <div className="container">
-          <span className="badge">{portfolio.hero.badge}</span>
-          <h1>{portfolio.hero.h1}</h1>
-          <p>{portfolio.hero.sub}</p>
+          <span className="badge">{t.portfolio.hero.badge}</span>
+          <h1>{t.portfolio.hero.h1}</h1>
+          <p>{t.portfolio.hero.sub}</p>
         </div>
       </section>
 
@@ -77,13 +73,13 @@ export default function PortfolioPage() {
       <section className="section" style={{ paddingTop: 0 }}>
         <div className="container">
           <div className="filter-tabs" role="group" aria-label="Filter projects">
-            {portfolio.filters.map((f) => (
+            {t.portfolio.filters.map((f, i) => (
               <NeonButton
                 key={f}
-                variant={activeFilter === f ? "solid" : "ghost"}
+                variant={filterIdx === i ? "solid" : "ghost"}
                 size="sm"
                 className="mx-0 text-sm font-medium text-white"
-                onClick={() => setActiveFilter(f)}
+                onClick={() => setFilterIdx(i)}
               >
                 {f}
               </NeonButton>
@@ -119,7 +115,7 @@ export default function PortfolioPage() {
       <section className="section" style={{ paddingTop: 0 }}>
         <div className="container">
           <div className="stats-strip">
-            {portfolio.stats.map((stat) => (
+            {t.portfolio.stats.map((stat) => (
               <StatItem key={stat.label} value={stat.value} label={stat.label} />
             ))}
           </div>
@@ -129,7 +125,7 @@ export default function PortfolioPage() {
       {/* ── CTA ── */}
       <section className="section" style={{ paddingTop: 0 }}>
         <div className="container text-center">
-          <NeonButton href="/contact" variant="solid" size="lg" className="text-base font-semibold">{portfolio.cta}</NeonButton>
+          <NeonButton href="/contact" variant="solid" size="lg" className="text-base font-semibold">{t.portfolio.cta}</NeonButton>
         </div>
       </section>
     </main>

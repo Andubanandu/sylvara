@@ -1,7 +1,10 @@
+"use client";
 import Link from "next/link";
-import { nav, footer } from "@/lib/content";
+import { useLanguage } from "@/context/language-context";
 
 export default function Footer() {
+  const { t } = useLanguage();
+
   return (
     <footer className="footer">
       <div className="container">
@@ -11,21 +14,21 @@ export default function Footer() {
               <div className="logo-main">SYLVARA</div>
               <div className="logo-sub">WEB DESIGN</div>
             </div>
-            <p className="footer-tagline">{footer.tagline}</p>
+            <p className="footer-tagline">{t.footer.tagline}</p>
           </div>
 
           <div>
-            <p className="footer-col-title">{footer.nav}</p>
+            <p className="footer-col-title">{t.footer.nav}</p>
             <ul className="footer-links">
-              <li><Link href="/services">{nav.services}</Link></li>
-              <li><Link href="/portfolio">{nav.work}</Link></li>
-              <li><Link href="/about">{nav.about}</Link></li>
-              <li><Link href="/contact">{nav.contact}</Link></li>
+              <li><Link href="/services">{t.nav.services}</Link></li>
+              <li><Link href="/portfolio">{t.nav.work}</Link></li>
+              <li><Link href="/about">{t.nav.about}</Link></li>
+              <li><Link href="/contact">{t.nav.contact}</Link></li>
             </ul>
           </div>
 
           <div>
-            <p className="footer-col-title">{footer.follow}</p>
+            <p className="footer-col-title">{t.footer.follow}</p>
             <div className="footer-social">
               <a href="https://linkedin.com" className="social-link" aria-label="LinkedIn" target="_blank" rel="noopener">
                 <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -46,8 +49,8 @@ export default function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <p>{footer.copy}</p>
-          <Link href="/privacy">{footer.privacy}</Link>
+          <p>{t.footer.copy}</p>
+          <Link href="/privacy">{t.footer.privacy}</Link>
         </div>
       </div>
     </footer>

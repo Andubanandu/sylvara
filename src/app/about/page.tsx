@@ -1,12 +1,6 @@
-import type { Metadata } from "next";
-import Link from "next/link";
-import { about, home } from "@/lib/content";
+"use client";
+import { useLanguage } from "@/context/language-context";
 import { Button as NeonButton } from "@/components/ui/neon-button";
-
-export const metadata: Metadata = {
-  title: "About — Sylvara Web Design",
-  description: "About Sylvara Web Design — who we are, our team, and what we stand for.",
-};
 
 const valueIcons = [
   <svg key="quality" viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>,
@@ -15,24 +9,26 @@ const valueIcons = [
 ];
 
 export default function AboutPage() {
+  const { t } = useLanguage();
+
   return (
     <main>
       {/* ── HERO ── */}
       <section className="page-hero">
         <div className="glow-blob glow-blob-tl" aria-hidden="true"></div>
         <div className="container">
-          <span className="badge">{about.hero.badge}</span>
-          <h1>{about.hero.h1}</h1>
-          <p>{about.hero.sub}</p>
+          <span className="badge">{t.about.hero.badge}</span>
+          <h1>{t.about.hero.h1}</h1>
+          <p>{t.about.hero.sub}</p>
         </div>
       </section>
 
       {/* ── TEAM ── */}
       <section className="section" style={{ paddingTop: 0 }}>
         <div className="container">
-          <h2 className="text-center">{about.team.h2}</h2>
+          <h2 className="text-center">{t.about.team.h2}</h2>
           <div className="team-grid mt-48">
-            {about.team.members.map((m) => (
+            {t.about.team.members.map((m) => (
               <div className="card team-card" key={m.name}>
                 <div className="team-avatar" aria-hidden="true">{m.initials}</div>
                 <h3>{m.name}</h3>
@@ -47,9 +43,9 @@ export default function AboutPage() {
       {/* ── VALUES ── */}
       <section className="section">
         <div className="container">
-          <h2 className="text-center">{about.values.h2}</h2>
+          <h2 className="text-center">{t.about.values.h2}</h2>
           <div className="values-grid mt-48">
-            {about.values.items.map((v, i) => (
+            {t.about.values.items.map((v, i) => (
               <div className="card" key={v.title}>
                 <div className="card-icon">{valueIcons[i]}</div>
                 <h3>{v.title}</h3>
@@ -65,10 +61,10 @@ export default function AboutPage() {
         <div className="container">
           <div className="cta-strip">
             <div className="cta-strip-text">
-              <h2>{home.cta.h2}</h2>
-              <p>{home.cta.sub}</p>
+              <h2>{t.home.cta.h2}</h2>
+              <p>{t.home.cta.sub}</p>
             </div>
-            <NeonButton href="/contact" variant="solid" size="lg" className="mx-0 text-base font-semibold">{about.cta}</NeonButton>
+            <NeonButton href="/contact" variant="solid" size="lg" className="mx-0 text-base font-semibold">{t.about.cta}</NeonButton>
           </div>
         </div>
       </section>

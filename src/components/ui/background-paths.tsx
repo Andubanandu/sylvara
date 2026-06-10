@@ -52,8 +52,10 @@ function FloatingPaths({ position }: { position: number }) {
 
 export function BackgroundPaths({
     title = "Background Paths",
+    ctaLabel = "Get a Free Quote →",
 }: {
     title?: string;
+    ctaLabel?: string;
 }) {
     const words = title.split(" ");
     const router = useRouter();
@@ -105,7 +107,7 @@ export function BackgroundPaths({
                         className="text-base font-semibold text-white transition-all duration-300 hover:-translate-y-0.5"
                         onClick={() => router.push("/contact")}
                     >
-                        Get a Free Quote →
+                        {ctaLabel}
                     </Button>
                 </motion.div>
             </div>

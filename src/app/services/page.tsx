@@ -1,12 +1,6 @@
-import type { Metadata } from "next";
-import Link from "next/link";
-import { services, home } from "@/lib/content";
+"use client";
+import { useLanguage } from "@/context/language-context";
 import { Button as NeonButton } from "@/components/ui/neon-button";
-
-export const metadata: Metadata = {
-  title: "Services — Sylvara Web Design",
-  description: "Web design, branding, SEO, e-commerce, logo design, copywriting, social media, and maintenance.",
-};
 
 const icons = [
   <svg key="web" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>,
@@ -20,15 +14,17 @@ const icons = [
 ];
 
 export default function ServicesPage() {
+  const { t } = useLanguage();
+
   return (
     <main>
       {/* ── HERO ── */}
       <section className="page-hero">
         <div className="glow-blob glow-blob-tl" aria-hidden="true"></div>
         <div className="container">
-          <span className="badge">{services.hero.badge}</span>
-          <h1>{services.hero.h1}</h1>
-          <p>{services.hero.sub}</p>
+          <span className="badge">{t.services.hero.badge}</span>
+          <h1>{t.services.hero.h1}</h1>
+          <p>{t.services.hero.sub}</p>
         </div>
       </section>
 
@@ -36,7 +32,7 @@ export default function ServicesPage() {
       <section className="section" style={{ paddingTop: 0 }}>
         <div className="container">
           <div className="services-full-grid">
-            {services.list.map((svc, i) => (
+            {t.services.list.map((svc, i) => (
               <div className="card" key={svc.title}>
                 <div className="card-icon">{icons[i]}</div>
                 <h3>{svc.title}</h3>
@@ -52,13 +48,13 @@ export default function ServicesPage() {
       <section className="section">
         <div className="container">
           <div className="text-center">
-            <h2>{services.process.h2}</h2>
+            <h2>{t.services.process.h2}</h2>
             <p style={{ color: "var(--text-muted)", marginTop: "12px", maxWidth: "520px", marginLeft: "auto", marginRight: "auto" }}>
-              {services.process.sub}
+              {t.services.process.sub}
             </p>
           </div>
           <div className="process-grid mt-48">
-            {services.process.steps.map((step) => (
+            {t.services.process.steps.map((step) => (
               <div className="process-step" key={step.n}>
                 <div className="step-number">{step.n}</div>
                 <h3>{step.title}</h3>
@@ -74,10 +70,10 @@ export default function ServicesPage() {
         <div className="container">
           <div className="cta-strip">
             <div className="cta-strip-text">
-              <h2>{home.cta.h2}</h2>
-              <p>{home.cta.sub}</p>
+              <h2>{t.home.cta.h2}</h2>
+              <p>{t.home.cta.sub}</p>
             </div>
-            <NeonButton href="/contact" variant="solid" size="lg" className="mx-0 text-base font-semibold">{home.cta.btn}</NeonButton>
+            <NeonButton href="/contact" variant="solid" size="lg" className="mx-0 text-base font-semibold">{t.home.cta.btn}</NeonButton>
           </div>
         </div>
       </section>

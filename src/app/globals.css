@@ -208,6 +208,7 @@ body.menu-open .nav-overlay { display: flex; }
 }
 .nav-overlay-lang { display: flex; gap: 16px; margin-top: 8px; }
 .nav-overlay-lang button { background: none; border: 1px solid var(--border); border-radius: 8px; color: var(--text-muted); font-family: var(--font-manrope), 'Manrope', sans-serif; font-weight: 600; font-size: 1rem; padding: 8px 20px; cursor: pointer; transition: all 200ms ease; }
+.nav-overlay-lang button.active { color: var(--accent-light); border-color: var(--accent-light); }
 @media (max-width: 768px) { .navbar-links { display: none; } .hamburger { display: flex; } }
 
 /* ============================================================
