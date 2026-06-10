@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { contact, services } from "@/lib/content";
+import { Button as NeonButton } from "@/components/ui/neon-button";
 
 interface FormState {
   name: string; email: string; service: string; message: string;
@@ -96,9 +97,9 @@ export default function ContactPage() {
                     {errors.message && <span className="field-error" style={{ display: "block" }} role="alert">{errors.message}</span>}
                   </div>
 
-                  <button type="submit" className="btn btn-primary" style={{ width: "100%", justifyContent: "center" }} disabled={loading}>
+                  <NeonButton type="submit" variant="solid" size="lg" className="w-full mx-0 justify-center text-base font-semibold" disabled={loading}>
                     {loading ? "Sending…" : contact.form.submit}
-                  </button>
+                  </NeonButton>
                 </form>
               )}
             </div>
@@ -111,9 +112,9 @@ export default function ContactPage() {
                 </div>
                 <h3>{contact.book.h3}</h3>
                 <p>{contact.book.p}</p>
-                <a href="https://calendly.com" target="_blank" rel="noopener" className="btn btn-ghost" style={{ width: "100%", justifyContent: "center" }}>
+                <NeonButton href="https://calendly.com" variant="ghost" size="lg" className="w-full mx-0 justify-center text-base font-semibold text-white">
                   {contact.book.btn}
-                </a>
+                </NeonButton>
               </div>
 
               <div className="card" style={{ marginTop: "20px" }}>

@@ -2,6 +2,7 @@ import Link from "next/link";
 import { home, services } from "@/lib/content";
 import HeroScroll from "@/components/HeroScroll";
 import { BackgroundPaths } from "@/components/ui/background-paths";
+import { Button as NeonButton } from "@/components/ui/neon-button";
 
 const serviceIcons = [
   <svg key="web" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>,
@@ -49,7 +50,7 @@ export default function HomePage() {
               <h2>{home.cta.h2}</h2>
               <p>{home.cta.sub}</p>
             </div>
-            <Link href="/contact" className="btn btn-primary">{home.cta.btn}</Link>
+            <NeonButton href="/contact" variant="solid" size="lg" className="mx-0 text-base font-semibold">{home.cta.btn}</NeonButton>
           </div>
         </div>
       </section>

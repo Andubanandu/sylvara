@@ -2,6 +2,7 @@
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { portfolio } from "@/lib/content";
+import { Button as NeonButton } from "@/components/ui/neon-button";
 
 function useCountUp(target: number, duration = 1200, active: boolean) {
   const [value, setValue] = useState(0);
@@ -77,13 +78,15 @@ export default function PortfolioPage() {
         <div className="container">
           <div className="filter-tabs" role="group" aria-label="Filter projects">
             {portfolio.filters.map((f) => (
-              <button
+              <NeonButton
                 key={f}
-                className={`filter-tab${activeFilter === f ? " active" : ""}`}
+                variant={activeFilter === f ? "solid" : "ghost"}
+                size="sm"
+                className="mx-0 text-sm font-medium text-white"
                 onClick={() => setActiveFilter(f)}
               >
                 {f}
-              </button>
+              </NeonButton>
             ))}
           </div>
 
@@ -126,7 +129,7 @@ export default function PortfolioPage() {
       {/* ── CTA ── */}
       <section className="section" style={{ paddingTop: 0 }}>
         <div className="container text-center">
-          <Link href="/contact" className="btn btn-primary">{portfolio.cta}</Link>
+          <NeonButton href="/contact" variant="solid" size="lg" className="text-base font-semibold">{portfolio.cta}</NeonButton>
         </div>
       </section>
     </main>

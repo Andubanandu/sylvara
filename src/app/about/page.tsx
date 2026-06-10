@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { about, home } from "@/lib/content";
+import { Button as NeonButton } from "@/components/ui/neon-button";
 
 export const metadata: Metadata = {
   title: "About — Sylvara Web Design",
@@ -67,7 +68,7 @@ export default function AboutPage() {
               <h2>{home.cta.h2}</h2>
               <p>{home.cta.sub}</p>
             </div>
-            <Link href="/contact" className="btn btn-primary">{about.cta}</Link>
+            <NeonButton href="/contact" variant="solid" size="lg" className="mx-0 text-base font-semibold">{about.cta}</NeonButton>
           </div>
         </div>
       </section>
