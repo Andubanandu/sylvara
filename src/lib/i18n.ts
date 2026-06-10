@@ -59,7 +59,7 @@ export const en = {
       { category: "branding", initials: "PS", gradient: "linear-gradient(135deg,#1c1917,#b45309)", tag: "Branding", title: "Päike Studio", desc: "Logo and social media kit for a photography studio." },
     ],
     stats: [
-      { value: "50+", label: "Projects Delivered" },
+      { value: "10+", label: "Projects Delivered" },
       { value: "3", label: "Years of Experience" },
       { value: "100%", label: "Client Satisfaction" },
     ],
@@ -74,9 +74,8 @@ export const en = {
     team: {
       h2: "Meet the Team",
       members: [
-        { initials: "MK", name: "Marten Kask", role: "Lead Designer & Founder", bio: "10 years of UI/UX experience across agencies and startups." },
-        { initials: "LT", name: "Laura Tamm", role: "Web Developer", bio: "Full-stack developer with a love for clean, performant front-ends." },
-        { initials: "KS", name: "Karl Sepp", role: "Brand Strategist", bio: "Helps clients find their voice and stand out in crowded markets." },
+        { initials: "AK", name: "Andri Koitla", role: "Lead Designer & Founder", bio: "UI/UX designer and founder with a passion for building brands that stand out online." },
+        { initials: "AP", name: "Aron Puna", role: "Developer & Marketing Specialist", bio: "Full-stack developer and marketing strategist who turns ideas into high-performing digital products." },
       ],
     },
     values: {
@@ -195,7 +194,7 @@ export const et: Translations = {
       { category: "branding", initials: "PS", gradient: "linear-gradient(135deg,#1c1917,#b45309)", tag: "Brändindus", title: "Päike Studio", desc: "Logo ja sotsiaalmeedia komplekt fotostuudiole." },
     ],
     stats: [
-      { value: "50+", label: "Lõpetatud Projekti" },
+      { value: "10+", label: "Lõpetatud Projekti" },
       { value: "3", label: "Aastat Kogemust" },
       { value: "100%", label: "Klientide Rahulolu" },
     ],
@@ -210,9 +209,8 @@ export const et: Translations = {
     team: {
       h2: "Tutvu Meeskonnaga",
       members: [
-        { initials: "MK", name: "Marten Kask", role: "Peadisainer & Asutaja", bio: "10 aastat UI/UX kogemust agentuurides ja iduettevõtetes." },
-        { initials: "LT", name: "Laura Tamm", role: "Veebiarendaja", bio: "Full-stack arendaja, kellele meeldib puhas ja jõudlik frontend." },
-        { initials: "KS", name: "Karl Sepp", role: "Brändistrateeg", bio: "Aitab klientidel leida oma hääle ja eristuda tihedas konkurentsis." },
+        { initials: "AK", name: "Andri Koitla", role: "Peadisainer & Asutaja", bio: "UI/UX disainer ja asutaja, kelle kirg on luua brände, mis internetis silma paistavad." },
+        { initials: "AP", name: "Aron Puna", role: "Arendaja & Turundusspetsialist", bio: "Full-stack arendaja ja turundusstrateeg, kes muudab ideed tulemuslikeks digitaalseteks toodeteks." },
       ],
     },
     values: {
