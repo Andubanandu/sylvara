@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { home, services } from "@/lib/content";
-import HeroScroll from "@/components/HeroScroll";
 import { BackgroundPaths } from "@/components/ui/background-paths";
 import { Button as NeonButton } from "@/components/ui/neon-button";
 
@@ -18,9 +17,6 @@ export default function HomePage() {
     <main>
       {/* ── HERO ── */}
       <BackgroundPaths title={`${home.hero.line1} ${home.hero.line2}`} />
-
-      {/* ── HERO SCROLL ANIMATION ── */}
-      <HeroScroll />
 
       {/* ── SERVICES OVERVIEW ── */}
       <section className="section" style={{ paddingTop: 0 }}>
