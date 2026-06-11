@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { useLanguage } from "@/context/language-context";
 import { Button as NeonButton } from "@/components/ui/neon-button";
+import { HeroGlow } from "@/components/HeroGlow";
 
 interface FormState {
   name: string; email: string; service: string; message: string;
@@ -48,8 +49,8 @@ export default function ContactPage() {
     <main>
       {/* ── HERO ── */}
       <section className="page-hero">
-        <div className="glow-blob glow-blob-tl" aria-hidden="true"></div>
-        <div className="container">
+        <HeroGlow />
+        <div className="container relative z-10">
           <span className="badge">{t.contact.hero.badge}</span>
           <h1>{t.contact.hero.h1}</h1>
           <p>{t.contact.hero.sub}</p>
@@ -61,7 +62,7 @@ export default function ContactPage() {
         <div className="container">
           <div className="contact-layout">
             {/* Form */}
-            <div>
+            <div data-reveal>
               {submitted ? (
                 <div className="form-success visible">
                   <h3>{t.contact.form.successH3}</h3>
@@ -106,7 +107,7 @@ export default function ContactPage() {
             </div>
 
             {/* Sidebar */}
-            <div>
+            <div data-reveal style={{ transitionDelay: "120ms" }}>
               <div className="card contact-card">
                 <div className="card-icon">
                   <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>

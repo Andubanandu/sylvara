@@ -62,7 +62,9 @@ export function BackgroundPaths({
 
     return (
         <div className="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-[#060E3A]">
-            <div className="absolute inset-0">
+            {/* mask fades the line pattern out before the section edge,
+                so there is no visible cut-off line into the next section */}
+            <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,black_65%,transparent_98%)]">
                 <FloatingPaths position={1} />
                 <FloatingPaths position={-1} />
             </div>

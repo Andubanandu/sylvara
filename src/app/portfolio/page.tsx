@@ -2,6 +2,7 @@
 import { useState, useEffect, useRef } from "react";
 import { useLanguage } from "@/context/language-context";
 import { Button as NeonButton } from "@/components/ui/neon-button";
+import { HeroGlow } from "@/components/HeroGlow";
 
 function useCountUp(target: number, duration = 1200, active: boolean) {
   const [value, setValue] = useState(0);
@@ -61,8 +62,8 @@ export default function PortfolioPage() {
     <main>
       {/* ── HERO ── */}
       <section className="page-hero">
-        <div className="glow-blob glow-blob-tl" aria-hidden="true"></div>
-        <div className="container">
+        <HeroGlow />
+        <div className="container relative z-10">
           <span className="badge">{t.portfolio.hero.badge}</span>
           <h1>{t.portfolio.hero.h1}</h1>
           <p>{t.portfolio.hero.sub}</p>
@@ -87,8 +88,8 @@ export default function PortfolioPage() {
           </div>
 
           <div className="portfolio-grid">
-            {filtered.map((project) => (
-              <article className="project-card" key={project.title}>
+            {filtered.map((project, i) => (
+              <article className="project-card" key={project.title} data-reveal style={{ transitionDelay: `${(i % 3) * 80}ms` }}>
                 <div className="project-card-img">
                   <div
                     className="project-card-img-inner"
@@ -114,7 +115,7 @@ export default function PortfolioPage() {
       {/* ── STATS ── */}
       <section className="section" style={{ paddingTop: 0 }}>
         <div className="container">
-          <div className="stats-strip">
+          <div className="stats-strip" data-reveal>
             {t.portfolio.stats.map((stat) => (
               <StatItem key={stat.label} value={stat.value} label={stat.label} />
             ))}

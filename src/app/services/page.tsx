@@ -1,6 +1,7 @@
 "use client";
 import { useLanguage } from "@/context/language-context";
 import { Button as NeonButton } from "@/components/ui/neon-button";
+import { HeroGlow } from "@/components/HeroGlow";
 
 const icons = [
   <svg key="web" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>,
@@ -20,8 +21,8 @@ export default function ServicesPage() {
     <main>
       {/* ── HERO ── */}
       <section className="page-hero">
-        <div className="glow-blob glow-blob-tl" aria-hidden="true"></div>
-        <div className="container">
+        <HeroGlow />
+        <div className="container relative z-10">
           <span className="badge">{t.services.hero.badge}</span>
           <h1>{t.services.hero.h1}</h1>
           <p>{t.services.hero.sub}</p>
@@ -33,7 +34,7 @@ export default function ServicesPage() {
         <div className="container">
           <div className="services-full-grid">
             {t.services.list.map((svc, i) => (
-              <div className="card" key={svc.title}>
+              <div className="card" key={svc.title} data-reveal style={{ transitionDelay: `${(i % 4) * 80}ms` }}>
                 <div className="card-icon">{icons[i]}</div>
                 <h3>{svc.title}</h3>
                 <p style={{ color: "var(--text-muted)", fontSize: ".875rem", marginTop: "8px", lineHeight: 1.65 }}>{svc.desc}</p>
@@ -47,15 +48,15 @@ export default function ServicesPage() {
       {/* ── PROCESS ── */}
       <section className="section">
         <div className="container">
-          <div className="text-center">
+          <div className="text-center" data-reveal>
             <h2>{t.services.process.h2}</h2>
             <p style={{ color: "var(--text-muted)", marginTop: "12px", maxWidth: "520px", marginLeft: "auto", marginRight: "auto" }}>
               {t.services.process.sub}
             </p>
           </div>
           <div className="process-grid mt-48">
-            {t.services.process.steps.map((step) => (
-              <div className="process-step" key={step.n}>
+            {t.services.process.steps.map((step, i) => (
+              <div className="process-step" key={step.n} data-reveal style={{ transitionDelay: `${i * 80}ms` }}>
                 <div className="step-number">{step.n}</div>
                 <h3>{step.title}</h3>
                 <p>{step.desc}</p>
@@ -65,10 +66,30 @@ export default function ServicesPage() {
         </div>
       </section>
 
+      {/* ── FAQ ── */}
+      <section className="section" style={{ paddingTop: 0 }}>
+        <div className="container">
+          <div className="text-center" data-reveal>
+            <h2>{t.services.faq.h2}</h2>
+            <p style={{ color: "var(--text-muted)", marginTop: "12px", maxWidth: "520px", marginLeft: "auto", marginRight: "auto" }}>
+              {t.services.faq.sub}
+            </p>
+          </div>
+          <div className="faq-list">
+            {t.services.faq.items.map((item, i) => (
+              <details className="faq-item" key={item.q} data-reveal style={{ transitionDelay: `${i * 60}ms` }}>
+                <summary>{item.q}</summary>
+                <p className="faq-answer">{item.a}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ── CTA ── */}
       <section className="section" style={{ paddingTop: 0 }}>
         <div className="container">
-          <div className="cta-strip">
+          <div className="cta-strip" data-reveal>
             <div className="cta-strip-text">
               <h2>{t.home.cta.h2}</h2>
               <p>{t.home.cta.sub}</p>

@@ -23,18 +23,18 @@ export default function HomePage() {
       {/* ── SERVICES OVERVIEW ── */}
       <section className="section" style={{ paddingTop: 0 }}>
         <div className="container">
-          <p className="section-label">{t.home.services.label}</p>
-          <h2>{t.home.services.h2}</h2>
+          <p className="section-label" data-reveal>{t.home.services.label}</p>
+          <h2 data-reveal>{t.home.services.h2}</h2>
           <div className="services-grid">
             {previewServices.map((svc, i) => (
-              <div className="card" key={svc.title}>
+              <div className="card" key={svc.title} data-reveal style={{ transitionDelay: `${i * 80}ms` }}>
                 <div className="card-icon">{serviceIcons[i]}</div>
                 <h3>{svc.title}</h3>
                 <p style={{ color: "var(--text-muted)", fontSize: ".875rem", marginTop: "8px" }}>{svc.desc}</p>
               </div>
             ))}
           </div>
-          <div className="services-more">
+          <div className="services-more" data-reveal>
             <Link href="/services">{t.home.services.more}</Link>
           </div>
         </div>
@@ -43,11 +43,11 @@ export default function HomePage() {
       {/* ── PROBLEMS ── */}
       <section className="section">
         <div className="container">
-          <p className="section-label">{t.problems.label}</p>
-          <h2>{t.problems.h2}</h2>
+          <p className="section-label" data-reveal>{t.problems.label}</p>
+          <h2 data-reveal>{t.problems.h2}</h2>
           <div className="problems-grid">
-            {t.problems.cards.map((card) => (
-              <div className="card" key={card.n}>
+            {t.problems.cards.map((card, i) => (
+              <div className="card" key={card.n} data-reveal style={{ transitionDelay: `${i * 80}ms` }}>
                 <span className="problem-num">{card.n}</span>
                 <h3>{card.title}</h3>
                 <p style={{ color: "var(--text-muted)", fontSize: ".875rem", marginTop: "8px", lineHeight: 1.65 }}>{card.body}</p>
@@ -67,10 +67,27 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ── TESTIMONIALS ── */}
+      <section className="section" style={{ paddingTop: 0 }}>
+        <div className="container">
+          <p className="section-label" data-reveal>{t.home.testimonials.label}</p>
+          <h2 data-reveal>{t.home.testimonials.h2}</h2>
+          <div className="testimonials-grid">
+            {t.home.testimonials.items.map((item, i) => (
+              <div className="card testimonial-card" key={item.name} data-reveal style={{ transitionDelay: `${i * 80}ms` }}>
+                <p className="testimonial-quote">{item.quote}</p>
+                <p className="testimonial-author">{item.name}</p>
+                <p className="testimonial-role">{item.role}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ── CTA STRIP ── */}
       <section className="section" style={{ paddingTop: 0 }}>
         <div className="container">
-          <div className="cta-strip">
+          <div className="cta-strip" data-reveal>
             <div className="cta-strip-text">
               <h2>{t.home.cta.h2}</h2>
               <p>{t.home.cta.sub}</p>

@@ -1,4 +1,7 @@
 .superpowers/
 node_modules/
+.next/
+*.tsbuildinfo
+.playwright-mcp/
 *.DS_Store
 Thumbs.db

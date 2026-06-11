@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { LanguageProvider } from "@/context/language-context";
+import { ScrollReveal } from "@/components/ScrollReveal";
 
 const syne = Syne({
   subsets: ["latin"],
@@ -37,6 +38,7 @@ export default function RootLayout({
           <Navbar />
           {children}
           <Footer />
+          <ScrollReveal />
         </LanguageProvider>
       </body>
     </html>
