@@ -22,7 +22,7 @@
   --radius-btn: 8px;
   --max-w: 1200px;
   --section-py: 80px;
-  --nav-h: 76px;
+  --nav-h: 80px;
 }
 
 /* ============================================================
@@ -200,14 +200,14 @@ p { line-height: 1.7; }
 .navbar {
   background: rgba(6,14,58,0.88); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
   border: 1px solid var(--border); border-radius: 12px;
-  padding: 0 24px; height: 60px;
+  padding: 0 44px; height: 64px;
   display: flex; align-items: center; justify-content: space-between;
 }
-.navbar-logo { display: flex; flex-direction: column; line-height: 1; gap: 2px; }
-.navbar-logo .logo-main { font-family: var(--font-syne), 'Syne', sans-serif; font-weight: 800; font-size: 1.05rem; letter-spacing: 0.06em; color: #fff; }
-.navbar-logo .logo-sub { font-size: 0.58rem; letter-spacing: 0.22em; color: var(--accent-light); text-transform: uppercase; }
-.navbar-links { display: flex; align-items: center; gap: 28px; }
-.navbar-links a { font-size: 0.875rem; color: var(--text-muted); transition: color 200ms ease; cursor: pointer; }
+.navbar-logo { display: flex; flex-direction: column; line-height: 1; gap: 3px; }
+.navbar-logo .logo-main { font-family: var(--font-syne), 'Syne', sans-serif; font-weight: 800; font-size: 1.35rem; letter-spacing: 0.06em; color: #fff; }
+.navbar-logo .logo-sub { font-size: 0.7rem; letter-spacing: 0.22em; color: var(--accent-light); text-transform: uppercase; }
+.navbar-links { display: flex; align-items: center; gap: 30px; }
+.navbar-links a { font-size: 1rem; color: var(--text-muted); transition: color 200ms ease; cursor: pointer; }
 .navbar-links a:hover, .navbar-links a.active { color: var(--text-primary); }
 .lang-switcher {
   display: flex; align-items: center; gap: 2px;
