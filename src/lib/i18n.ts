@@ -184,6 +184,12 @@ export const en = {
     ],
     cta: "Get in Touch",
   },
+  cookies: {
+    aria: "Cookie consent",
+    text: "We use cookies to improve your experience and analyse website traffic.",
+    accept: "Accept",
+    necessary: "Only necessary",
+  },
   footer: {
     tagline: "Bold Design. Real Results.",
     nav: "Navigation",
@@ -380,6 +386,12 @@ export const et: Translations = {
       },
     ],
     cta: "Võta ühendust",
+  },
+  cookies: {
+    aria: "Küpsiste nõusolek",
+    text: "Kasutame küpsiseid, et parandada sinu kasutuskogemust ja analüüsida veebiliiklust.",
+    accept: "Nõustun",
+    necessary: "Ainult vajalikud",
   },
   footer: {
     tagline: "Julge Disain. Reaalsed Tulemused.",
