@@ -144,10 +144,11 @@ export const en = {
     book: {
       h3: "Book a Discovery Call",
       p: "Prefer to talk? Book a free 30-minute call and we'll walk through your project together.",
-      btn: "Book on Calendly",
+      btn: "Book a Meeting",
     },
     info: {
-      email: "hello@sylvaradesign.com",
+      email: "sylvarawd@gmail.com",
+      phone: "+372 5371 0484",
       location: "Tallinn, Estonia",
       response: "We reply within 24 hours",
     },
@@ -340,10 +341,11 @@ export const et: Translations = {
     book: {
       h3: "Broneeri Avastamiskõne",
       p: "Eelistate rääkida? Broneerige tasuta 30-minutiline kõne ja arutame koos teie projekti.",
-      btn: "Broneeri Calendly's",
+      btn: "Broneeri Kohtumine",
     },
     info: {
-      email: "hello@sylvaradesign.com",
+      email: "sylvarawd@gmail.com",
+      phone: "+372 5371 0484",
       location: "Tallinn, Eesti",
       response: "Vastame 24 tunni jooksul",
     },
