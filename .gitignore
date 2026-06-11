@@ -1,6 +1,7 @@
 .superpowers/
 node_modules/
 .next/
+out/
 *.tsbuildinfo
 .playwright-mcp/
 *.DS_Store
