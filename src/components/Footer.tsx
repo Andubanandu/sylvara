@@ -30,12 +30,12 @@ export default function Footer() {
           <div>
             <p className="footer-col-title">{t.footer.follow}</p>
             <div className="footer-social">
-              <a href="https://facebook.com" className="social-link" aria-label="Facebook" target="_blank" rel="noopener">
+              <a href="https://www.facebook.com/profile.php?id=61589947375739" className="social-link" aria-label="Facebook" target="_blank" rel="noopener">
                 <svg viewBox="0 0 24 24" aria-hidden="true">
                   <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
                 </svg>
               </a>
-              <a href="https://instagram.com" className="social-link" aria-label="Instagram" target="_blank" rel="noopener">
+              <a href="https://www.instagram.com/sylvara.ee/" className="social-link" aria-label="Instagram" target="_blank" rel="noopener">
                 <svg viewBox="0 0 24 24" aria-hidden="true">
                   <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
                   <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
